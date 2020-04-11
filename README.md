@@ -24,5 +24,8 @@ while: utilizar quando não souber o tamanho do resultado
 
 Intervalo e timeout
 
+Módulo 01: exercicios resolvidos
+
+
 
 

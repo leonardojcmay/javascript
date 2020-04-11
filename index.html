@@ -8,15 +8,15 @@
 
         <script>
             //javascript
-            var endereco = {
-                rua: "Rua dos pinheiros",
-                numero: 1293,
-                bairro: "Centro",
-                cidade: "São Paulo",
-                uf: "SP"
-            };
+            function pares(x, y) {
+                for (var x = x; x<= y; x++) {
+                    if ((x%2) === 0) {
+                        console.log(x);
+                    }
+                }
+            }
 
-            console.log('O usuário mora em '+endereco.cidade+' / '+endereco.uf+', no bairro '+endereco.bairro+', na rua "'+endereco.rua+'" com nº '+endereco.numero+'.');
+            pares(32, 321);
 
         </script>
     </body>

@@ -13,3 +13,6 @@ Operações matemáticas
 Funções
 
 Condicionais
+
+Operadores lógicos
+

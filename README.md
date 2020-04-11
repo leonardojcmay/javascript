@@ -22,5 +22,7 @@ Estruturas de repetição
 for: utilizar sempre que souber o tamanho do resultado
 while: utilizar quando não souber o tamanho do resultado
 
+Intervalo e timeout
+
 
 

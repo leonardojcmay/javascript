@@ -9,3 +9,5 @@ Variaveis:
 <br>Não é necessário indicar a tipagem das variaveis. Não utiliza a tipagem estática, utiliza a tipagem dinamica, consegue atribuir valores de diferentes formatos a mesma variavel
 
 Operações matemáticas
+
+Funções

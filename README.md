@@ -16,3 +16,7 @@ Condicionais
 
 Operadores lógicos
 
+Condição ternária
+
+
+

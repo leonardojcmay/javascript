@@ -26,6 +26,11 @@ Intervalo e timeout
 
 Módulo 01: exercicios resolvidos
 
+Manipulando a DOM:
+
+DOM é a arvore de elementos do HTML
+como saber se o usuario passou o mouse por cima do botão ou ate mesmo clicou o botao
+
 
 
 

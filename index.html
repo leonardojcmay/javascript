@@ -5,28 +5,23 @@
 
     <body>
 
+        <div id="app">
+            <!-- clicando no botão e aparecendo o alerta -->
+            <!-- <button onClick="mostraAlerta()">Me pressione</button> -->
+            
+            <!-- passando o mouse por cima e aparecendo o alerta -->
+            <!-- <button onmouseover="mostraAlerta()">Me pressione</button> -->
+
+            <!-- escrevendo e ocorrendo o alerta -->
+            <input onkeypress="mostraAlerta()" />
+        </div>
+
 
         <script>
             //javascript
-            var usuarios = [
-                {
-                nome: "Diego",
-                habilidades: ["Javascript", "ReactJS", "Redux"]
-                },
-                {
-                nome: "Gabriel",
-                habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
-                }
-            ];
-
-            for (let x of usuarios) {
-                console.log('O '+x.nome+' possui as habilidades: '+x.habilidades.join(', ')); 
+            function mostraAlerta() {
+                alert('Botão foi clicado');
             }
-
-            //O Diego possui as habilidades: Javascript, ReactJS, Redux
-            //O Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir
-
-
         </script>
     </body>
 </html>

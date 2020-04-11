@@ -6,22 +6,35 @@
     <body>
 
         <div id="app">
-            <!-- clicando no botão e aparecendo o alerta -->
-            <!-- <button onClick="mostraAlerta()">Me pressione</button> -->
-            
-            <!-- passando o mouse por cima e aparecendo o alerta -->
-            <!-- <button onmouseover="mostraAlerta()">Me pressione</button> -->
-
-            <!-- escrevendo e ocorrendo o alerta -->
-            <input onkeypress="mostraAlerta()" />
+            <!-- <input type="text" name="nome" id="nome" class="nome"/> -->
+            <input type="text" name="nome"/>
+            <!-- <input type="text" name="nome2"/> -->
+            <button class="botao">Adicionar</button>
         </div>
 
 
         <script>
             //javascript
-            function mostraAlerta() {
-                alert('Botão foi clicado');
+            //var inputElement = document.getElementById('nome');
+            //var inputElement = document.getElementsByTagName('input')[0];
+            //var inputElement = document.getElementsByClassName('nome')[0];
+
+            //querySelector: deixa percorrer a DOM até encontrar o elemento. Retorna sempre um unico elemento. querySelectAll retorna todos
+            //var inputElement = document.querySelector('div#app input');
+            //var inputElement = document.querySelector('input[name=nome]');
+            //var inputElement = document.querySelector('input');
+            //var inputElement = document.querySelectorAll('input');
+
+            var inputElement = document.querySelector('input[name=nome]');
+            var btnElement = document.querySelector('button.botao');
+
+            btnElement.onclick = function() {
+                var text = inputElement.value;
+
+                // alert('Botão clicado');
+                alert(text);
             }
+            
         </script>
     </body>
 </html>

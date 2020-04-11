@@ -31,6 +31,6 @@ Manipulando a DOM:
 DOM é a arvore de elementos do HTML
 como saber se o usuario passou o mouse por cima do botão ou ate mesmo clicou o botao
 
-
-
+Referenciando elementos da DOM, HTML atraves do JavaScript
+querySeletor: utilizado quando precisar buscar elementos em tela
 

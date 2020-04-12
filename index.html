@@ -6,17 +6,35 @@
     <body>
 
         <div id="app">
+            <button class="botao">Adicionar elemento</button>
+            
             <div class="box"></div>
         </div>
 
         <script>
             //javascript
-            //controlar as stylizações css de cada elemento
-            var boxElement = document.querySelector('.box');
+            // Crie um botão que ao ser clicado cria um novo elemento em tela com a forma de um quadrado
+            // vermelho com 100px de altura e largura. Sempre que o botão for clicado um novo quadrado deve
+            // aparecer na tela.
 
-            boxElement.style.width = 100;
-            boxElement.style.height = 100;
-            boxElement.style.backgroundColor = '#f00';
+            //botao adicionar elemento
+            var btnElement = document.querySelector('button.botao');
+            btnElement.onclick = function () {
+                
+                //criando elemento quadrado vermelho
+                var boxElement = document.createElement('img');
+                boxElement.style.width = 100;
+                boxElement.style.height = 100;
+                boxElement.style.border = 5;
+                boxElement.style.backgroundColor = '#f00';
+
+                //colocando link dentro do corpo do HTML
+                var containerElement = document.querySelector('#app');
+                containerElement.appendChild(boxElement);
+
+                console.log(boxElement)
+                
+            }
 
         </script>
     </body>

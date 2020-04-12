@@ -6,26 +6,17 @@
     <body>
 
         <div id="app">
-            <input id="nome" />
+            <div class="box"></div>
         </div>
 
         <script>
             //javascript
-            var linkElement = document.createElement('a');
-            linkElement.setAttribute('href', 'http://rocketseat.com.br');
-            linkElement.setAttribute('title', 'Site da Rocketseat');
+            //controlar as stylizações css de cada elemento
+            var boxElement = document.querySelector('.box');
 
-            var textElement = document.createTextNode('Acessar site da Rocketseat');
-            //posicionando o texto dentro do link. Adicionando o textElement como filho do linkElement
-            linkElement.appendChild(textElement);
-
-            //colocando link dentro do corpo do HTML
-            var containerElement = document.querySelector('#app');
-            containerElement.appendChild(linkElement);
-
-            //removendo input atraves do JavaScript
-            var inputElement = document.querySelector('#nome');
-            containerElement.removeChild(inputElement);
+            boxElement.style.width = 100;
+            boxElement.style.height = 100;
+            boxElement.style.backgroundColor = '#f00';
 
         </script>
     </body>

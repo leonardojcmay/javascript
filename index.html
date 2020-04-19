@@ -1,77 +1,45 @@
 <html>
-    <head>
-        <title>Curso JS</title>
-    </head>
 
-    <body>
+<head>
+    <title>Curso JS</title>
+</head>
 
-        <div id="app">
+<body>
 
+    <div id="app">
 
-            <button class="botao">Adicionar elemento</button>
-            
-            <div class="box" onmouseover="mouseOver($event)"></div>
+        <button class="botao">Adicionar elemento</button>
 
-        </div>
+        <ul id="lista"></ul>
 
-        <script>
-            //javascript
-            //Utilizando o resultado do primeiro desafio, toda vez que o usuário passar o mouse por cima de
-            //algum quadrado troque sua cor para uma cor aleatória gerada pela função abaixo:
+    </div>
 
-            var i = 0;
-            //botao adicionar elemento
-            var btnElement = document.querySelector('button.botao');
-            btnElement.onclick = function () {
-                
-                //criando elemento quadrado vermelho
-                var boxElement = document.createElement('button');
-                var color = '#f00';
-                
-                //boxElement.className="imagem"+Math.random();
-                boxElement.className=`imagem${i}`;
-                boxElement.style.width = 100;
-                boxElement.style.height = 100;
-                boxElement.style.border = 5;
-                boxElement.style.backgroundColor = color;
-                boxElement.onmouseover = mouseOver;
+    <script>
+        //javascript
+        // A partir do seguinte vetor:
+        // var nomes = ["Diego", "Gabriel", "Lucas"];
+        //  Preencha uma lista (<ul>) no HTML com os itens da seguinte forma:
+        // ● Diego
+        // ● Gabriel
+        // ● Lucas
 
-                //colocando boxElement dentro do corpo do HTML
-                var containerElement = document.querySelector('#app');
-                containerElement.appendChild(boxElement);
+        //botao adicionar elemento
+        var btnElement = document.querySelector('button.botao');
+        btnElement.onclick = function () {
+            //criando elemento quadrado vermelho
+            var nomes = ["Diego", "Gabriel", "Lucas"];
 
-                i++;
-                console.log(boxElement)
+            var lista = document.getElementById('lista');
+
+            for (var i = 0; i < nomes.length; i++) {
+                var item = document.createElement('li');
+                item.appendChild(document.createTextNode(nomes[i]));
+                lista.appendChild(item);
             }
+        }
 
-            function mouseOver({toElement}) {
-                
-                // teste 1:
-                // var boxElement = document.querySelector(`button.${toElement.className}`);
-                // boxElement.style.backgroundColor = getRandomColor();   
+    </script>
 
-                toElement.style.backgroundColor = getRandomColor();   
-                console.log(toElement.className)
-            }
-            
-            function getRandomColor(){ 
-                
-                //console.log(1)
-                
-                var letters = "0123456789ABCDEF";
-                var color = "#";
-                
-                for (var i = 0; i < 6; i++) {
-                    color += letters[Math.floor(Math.random() * 16)];
-                }
+</body>
 
-                console.log(color)
-                return color;
-            
-            }
-            //var newColor = getRandomColor(); // #E943F0 
-            
-        </script>
-
-    </body>
 </html>
